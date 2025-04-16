@@ -1,0 +1,41 @@
+# Prompts used during development of ClickHouse ↔ Flat File Ingestion Tool
+
+1. Explain step-by-step how to build a web app for bidirectional data ingestion between ClickHouse and flat files using Python and HTML.
+
+2. How to connect to a ClickHouse database using JWT token in Python?
+
+3. How to use clickhouse-connect Python package to run queries and insert data?
+
+4. How to read and parse a CSV file using pandas in Flask?
+
+5. How to upload a file from an HTML form and send it to a Flask backend?
+
+6. How to extract column names from a CSV file and return them as JSON in Flask?
+
+7. How to create a new table dynamically in ClickHouse using Python based on selected column names?
+
+8. How to insert a pandas DataFrame into a ClickHouse table using clickhouse-connect?
+
+9. How to display a list of checkboxes in HTML based on data returned from the backend?
+
+10. How to track selected checkbox values using JavaScript?
+
+11. How to send selected checkboxes + a file together in a POST request using JavaScript fetch?
+
+12. How to build a simple HTML + JS frontend to interact with Flask backend?
+
+13. How to activate Python virtual environment in VS Code terminal?
+
+14. How to fix: `ModuleNotFoundError: No module named 'flask'` in a virtual environment?
+
+15. How to push a local project folder to GitHub using Git?
+
+16. How to write a professional README.md for a full-stack ingestion project?
+
+17. How to structure a Flask project with frontend and backend folders?
+
+18. How to test ClickHouse connection and view tables via HTTP?
+
+19. How to run ClickHouse server locally using Docker?
+
+20. How to troubleshoot: 'cd: No such file or directory' error in Git Bash?
