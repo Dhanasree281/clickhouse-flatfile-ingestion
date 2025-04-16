@@ -44,3 +44,40 @@ This project provides a simple yet powerful tool for transferring data between a
 
 ## Project Structure
 
+
+
+---
+
+## Setup & Installation
+
+### Prerequisites
+
+- **Python 3.x** installed on your system
+- **Docker** (for running ClickHouse locally)
+- **Git** (for version control)
+- A code editor like **VS Code**
+
+### Backend Setup
+
+1. **Navigate to the `backend` folder:**
+
+   Open your terminal and change directory:
+   ```bash
+   cd path/to/clickhouse-flatfile-ingestion/backend
+2. **Frontend Setup **
+Navigate to the frontend folder:
+
+Make sure you have an index.html file in the frontend directory.
+
+Check the file contents:
+
+The file should contain HTML and JavaScript code for:
+
+Inputting ClickHouse connection details
+
+Uploading CSV files
+
+Displaying table and column information
+
+Sending requests to the backend API
+
