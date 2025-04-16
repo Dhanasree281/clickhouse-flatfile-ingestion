@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ClickHouse Ingestion Tool</title>
+</head>
+<body>
+  <h2>🔐 Connect to ClickHouse</h2>
+
+  <label>Host: </label>
+  <input id="host" placeholder="localhost"><br><br>
+
+  <label>Port: </label>
+  <input id="port" placeholder="8123"><br><br>
+
+  <label>User: </label>
+  <input id="user" placeholder="testuser"><br><br>
+
+  <label>JWT Token (Password): </label>
+  <input id="jwt" placeholder="testpass"><br><br>
+
+  <button onclick="connectClickHouse()">Connect</button>
+
+  <h3>🗂️ Tables:</h3>
+  <div id="tables"></div>
+
+  <script>
+    async function connectClickHouse() {
+      const data = {
+        host: document.getElementById('host').value,
+        port: document.getElementById('port').value,
+        user: document.getElementById('user').value,
+        jwt: document.getElementById('jwt').value
+      };
+
+      const response = await fetch('http://localhost:5000/connect_clickhouse', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      const result = await response.json();
+
+      const tableDiv = document.getElementById('tables');
+      if (result.tables) {
+        tableDiv.innerHTML = result.tables.map(t => `<li>${t}</li>`).join('');
+      } else {
+        tableDiv.innerHTML = `<span style="color:red;">Error: ${result.error}</span>`;
+      }
+    }
+  </script>
+</body>
+</html>
