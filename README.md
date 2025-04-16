@@ -64,7 +64,8 @@ This project provides a simple yet powerful tool for transferring data between a
    Open your terminal and change directory:
    ```bash
    cd path/to/clickhouse-flatfile-ingestion/backend
-**###Frontend Setup** 
+### Frontend Setup 
+
 Navigate to the frontend folder:
 
 Make sure you have an index.html file in the frontend directory.
